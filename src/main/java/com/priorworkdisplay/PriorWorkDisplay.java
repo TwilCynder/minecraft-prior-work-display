@@ -8,11 +8,11 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 import net.minecraftforge.common.MinecraftForge;
  
-@Mod(modid = TestMod.MODID, name = TestMod.NAME, version = TestMod.VERSION)
-public class TestMod
+@Mod(modid = PriorWorkDisplay.MODID, name = PriorWorkDisplay.NAME, version = PriorWorkDisplay.VERSION)
+public class PriorWorkDisplay
 {
-    public static final String MODID = "testmod";
-    public static final String NAME = "Test Mod";
+    public static final String MODID = "priorworkdisplay";
+    public static final String NAME = "Prior Work Display";
     public static final String VERSION = "1.0";
 
     private static Logger logger;
@@ -27,7 +27,6 @@ public class TestMod
     public void init(FMLInitializationEvent event)
     {
         // some example code
-        logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
         MinecraftForge.EVENT_BUS.register(new ItemTooltipEventHandler());
     }
 }

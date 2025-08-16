@@ -14,8 +14,8 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = '1.0'
-group = 'com.twilcynder.testmod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'testmod'
+group = 'com.twilcynder.priorworkdisplay' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'priorworkdisplay'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
@@ -85,7 +85,7 @@ dependencies {
 jar {
     manifest {
         attributes([
-            "Specification-Title": "Test Mod",
+            "Specification-Title": "Prior Work Display",
             "Specification-Vendor": "TwilCynder",
             "Specification-Version": "1", // We are version 1 of ourselves
             "Implementation-Title": project.name,
